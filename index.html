@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JAVED">
+    <meta name="keywords" content="game, tic tac toe with bot, tic tac toe, TIC TAC TOE, ">
+    <meta name="description" content=" A tic tac toe game which you cxan play with yourself and with bot too">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="game_logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="company">
+        <button id="computer">Play With Computer</button>
+        <button id="yourself">Play Yourself</button>
+    </div>
+    <div id="gameBox">
+        <div id="Cplayer">
+            <h3 id="ques">Choose <span class="signO">O</span> (noughts) or <span class="signX">X</span> (crosses)</h3>
+            <div id="option">
+                <button class="signO">O</button><button class="signX">X</button>
+            </div>
+        </div>
+        <div id="withComp"></div>
+        <div id="Mplayer">
+            Tic Tac Toe
+            <div id="turn">
+                X's turn
+            </div>
+        </div>
+        <div id="game">
+            <table>
+                <tr>
+                    <td class="box" id="e1"></td>
+                    <td class="box" id="e2"></td>
+                    <td class="box" id="e3"></td>
+                </tr>
+                <tr>
+                    <td class="box" id="e4"></td>
+                    <td class="box" id="e5"></td>
+                    <td class="box" id="e6"></td>
+                </tr>
+                <tr>
+                    <td class="box" id="e7"></td>
+                    <td class="box" id="e8"></td>
+                    <td class="box" id="e9"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="winner"></div>
+        <button id="replay">PLay Again</button>
+    </div>
+    <script src="function.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

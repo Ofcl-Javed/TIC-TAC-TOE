@@ -1,0 +1,214 @@
+/* #483d8b */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #663399;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#company{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+#computer , #yourself{
+    font-size: 50px;
+    margin: 5px;
+    padding: 10px 40px;
+    color: #d0ccd0;
+    background-color: #4b0082;
+}
+#computer:hover , #yourself:hover{
+    cursor: pointer;
+    background-color: #5b019b;
+}
+#gameBox{
+    height: 100vh;
+    width: 100vw;
+    display:none;
+    place-content: center;
+}
+#Cplayer{
+    display: grid;
+    place-content: center;
+}
+#ques{
+    width: 100%;
+    padding: 10px;
+    color: #cfcfcf;
+    font-size: 35px;
+}
+.signO , .signX{
+    font-family: 'Lato', sans-serif;
+}
+.signO{
+    color: #e95c4b;
+}
+.signX{
+    color: #8f9779;
+}
+#option{
+    display: flex;
+    justify-content: center;
+}
+button {
+    border: 1px solid #2a3439;
+    margin: 1px;
+    outline: none;
+}
+button.signO , button.signX{
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #e2e2e2;
+    width: 50%;
+    margin-bottom: 10px;
+}
+button.signO:hover , button.signX:hover{
+    cursor: pointer;
+    background-color: #cecccc;
+}
+#Mplayer, #turn, #withComp{
+    display: none;
+    place-content: center;
+    width: 100%;
+    color: #cfcfcf;
+    font-size: 45px;
+}
+#game{
+    display: grid;
+    place-content: center;
+    margin-top: 25px;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px auto;
+    background-color:#5b019b; 
+}
+table tr td{
+    border: 2px solid #2a3439;
+    width: 8vw;
+    height: 8vw;
+    font-size: 50px;
+    text-align: center;
+}
+table tr td:hover{
+    background-color: #4b0082;
+    cursor: pointer;
+}
+#winner{
+    display:none;
+    place-content: center;
+    width: 100%;
+    color: #e95c4b;
+    font-size: 55px;
+    margin: 10px auto;
+}
+#replay{
+    display: none;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    background-color: #4b0082;
+    color: #cecccc;
+    padding: 25px;
+}
+#replay:hover{
+    cursor: pointer;
+    background-color: #5b019b;
+}
+@media screen and (max-width: 770px) {
+    table tr td{
+        width: 15vw;
+        height: 15vw;
+        font-size: 75px;
+    }
+    #Mplayer, #turn, #withComp {
+        font-size: 60px;
+    }
+    #winner{
+        font-size: 70px;
+    }
+    #replay {
+        font-size: 36px;
+        padding: 25px 0;
+    }
+    #ques{
+        font-size: 40px;
+    }
+    button.signO, button.signX{
+        font-size: 37px;
+    }
+}
+@media screen and (max-width: 580px) {
+    #computer, #yourself{
+        font-size: 45px;
+    }
+    #Mplayer, #turn, #withComp{
+        margin-top: 10px;
+    }
+    table tr td {
+        width: 20vw;
+        height: 20vw;
+    }
+    #ques{
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+    button.signO, button.signX {
+        font-size: 32px;
+        width: 35vw;
+    }
+    #Cplayer {
+        display: grid;
+        place-items: center;
+    }
+}
+@media screen and (max-width: 450px){
+    #computer, #yourself {
+        font-size: 42px;
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #Cplayer{
+        text-align: center;
+    }
+    #ques{
+        width: 92%;
+        font-size: 40px;
+    }
+    table tr td {
+        width: 25vw;
+        height: 25vw;
+        font-size: 65px;
+    }
+    #replay {
+        font-size: 34px;
+        width: 75%;
+        padding: 25px 0;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 380px){
+    #computer, #yourself {
+        font-size: 40px;
+        padding: 10px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #ques{
+        font-size: 38px;
+    }
+    table tr td {
+        font-size: 60px;
+    }
+}
